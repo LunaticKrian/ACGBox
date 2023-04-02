@@ -1,0 +1,7 @@
+server:
+  # 导航核心模块端口号
+  port: 1100
+
+spring:
+  application:
+    name: website-name
