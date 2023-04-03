@@ -5,16 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>ACGBox-WebSite-Core</module>
+        <module>ACGBox-WebSite-Base</module>
     </modules>
 
     <parent>
-        <groupId>acgcsbox.wiki</groupId>
+        <groupId>wiki.acgcsbox</groupId>
         <artifactId>ACGBox-Parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../ACGBox-Parent</relativePath>
     </parent>
 
-    <groupId>acgbox.wiki</groupId>
     <artifactId>ACGBox-WebSite</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
