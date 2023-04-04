@@ -19,5 +19,11 @@
     <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
 
-
+<dependencies>
+    <dependency>
+        <groupId>wiki.acgcsbox</groupId>
+        <artifactId>ACGBox-Common</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+</dependencies>
 </project>
