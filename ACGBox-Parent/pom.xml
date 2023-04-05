@@ -146,6 +146,12 @@
                 <version>${minio.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+
             <!-- Knife4 API 在线文档 -->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>

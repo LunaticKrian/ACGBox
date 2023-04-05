@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ACGBox-Media-Core</module>
+        <module>ACGBox-Media-Base</module>
     </modules>
 
     <parent>

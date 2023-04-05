@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wiki.acgcsbox.imagesharck.mapper.MediaImageshackMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="wiki.acgcsbox.imagesharck.model.po.MediaImageshack">
+        <id column="id" property="id" />
+        <result column="file_id" property="fileId" />
+        <result column="menu_id" property="menuId" />
+        <result column="file_name" property="fileName" />
+        <result column="file_type" property="fileType" />
+        <result column="tags" property="tags" />
+        <result column="url" property="url" />
+        <result column="bucket" property="bucket" />
+        <result column="click_count" property="clickCount" />
+        <result column="upload_time" property="uploadTime" />
+        <result column="remark" property="remark" />
+        <result column="status" property="status" />
+        <result column="delete_status" property="deleteStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, file_id, menu_id, file_name, file_type, tags, url, bucket, click_count, upload_time, remark, status, delete_status
+    </sql>
+
+</mapper>
