@@ -3,7 +3,6 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ACGBox-Generator" />
-    <file type="web" url="file://$PROJECT_DIR$/ACGBox-Generator" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,6 +13,10 @@
         <option value="$PROJECT_DIR$/ACGBox-User/pom.xml" />
         <option value="$PROJECT_DIR$/ACGBox-Gengerator/pom.xml" />
         <option value="$PROJECT_DIR$/ACGBox-Generator/pom.xml" />
+        <option value="$PROJECT_DIR$/ACGBox-ACG/pom.xml" />
+        <option value="$PROJECT_DIR$/ACGBox-Media/pom.xml" />
+        <option value="$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Core/pom.xml" />
+        <option value="$PROJECT_DIR$/ACGBox-Common/pom.xml" />
       </list>
     </option>
   </component>

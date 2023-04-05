@@ -11,6 +11,7 @@ spring:
       # 解决SpringFox迁移到SpringDoc和SpringBoot 2.6+版本路径匹配模式不一致问题
       matching-strategy: ANT_PATH_MATCHER
 
+  # 数据源配置：
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -33,3 +34,11 @@ spring:
       # 数据库连接超时时间,默认30秒，即30000
       connection-timeout: 30000
       connection-test-query: SELECT 1
+
+  # rabbitMQ 配置
+  rabbitmq:
+    host: 43.142.44.242
+    port: 5672
+    username: admin
+    password: rabbitmqadmin
+    virtual-host: /
