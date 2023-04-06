@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/ACGBox-Media/pom.xml" />
         <option value="$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Core/pom.xml" />
         <option value="$PROJECT_DIR$/ACGBox-Common/pom.xml" />
+        <option value="$PROJECT_DIR$/ACGBox-Gateway/pom.xml" />
       </list>
     </option>
   </component>

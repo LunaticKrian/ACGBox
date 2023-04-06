@@ -1,0 +1,66 @@
+# ------ Nacos 统一配置中心 配置文件 ------
+
+server:
+  # 导航核心模块端口号
+  port: 1100
+
+spring:
+  application:
+    name: website
+
+  mvc:
+    pathmatch:
+      # 解决SpringFox迁移到SpringDoc和SpringBoot 2.6+版本路径匹配模式不一致问题
+      matching-strategy: ANT_PATH_MATCHER
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.142.44.242:3306/acg_box_website?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: Kuang8223004369
+    # hikari 数据源配置：
+    hikari:
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 10
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 1800000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+  # 微服务配置：
+  cloud:
+    nacos:
+      # Nacos 服务地址：
+      server-addr: 43.142.44.242:8848
+      username: admin
+      password: nacosadmin
+      # Nacos 服务发现：
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+      # Nacos 统一配置：
+      config:
+        server-addr: ${spring.cloud.nacos.server-addr}
+        # 指定配置文件后缀名：
+        file-extension: yaml
+        # 配置文件动态刷新：
+        refresh-enabled: true
+        # 配置文件的分组规则：
+        group: DEFAULT_GROUP
+
+
+
+# Actuator 服务监控：
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
