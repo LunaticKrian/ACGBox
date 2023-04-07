@@ -7,20 +7,28 @@
     <file url="file://$PROJECT_DIR$/ACGBox-ACG/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Generator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Parent/ACGBox-Media/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-User/ACGBox-User-Base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-User/ACGBox-User-Base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-User/ACGBox-User-Core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-User/ACGBox-User-Core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-User/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-User/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-WebSite/ACGBox-WebSite-Base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-WebSite/ACGBox-WebSite-Base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-WebSite/ACGBox-WebSite-Core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-WebSite/ACGBox-WebSite-Core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-WebSite/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-WebSite/src/main/resources" charset="UTF-8" />
   </component>

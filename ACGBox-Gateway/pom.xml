@@ -2,24 +2,40 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>wiki.acgcsbox</groupId>
         <artifactId>ACGBox-Parent</artifactId>
+        <groupId>wiki.acgcsbox</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../ACGBox-Parent</relativePath>
+        <relativePath>../ACGBox-Parent/pom.xml</relativePath>
     </parent>
 
+    <modelVersion>4.0.0</modelVersion>
+
     <artifactId>ACGBox-Gateway</artifactId>
-    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+
     <dependencies>
+        <!-- Spring Cloud Gateway 网关-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
         <!-- 排除 Spring Boot 依赖的日志包冲突 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -32,23 +48,19 @@
             </exclusions>
         </dependency>
 
-        <!-- SpringCloud Nacos 服务注册中心-->
+        <!-- Spring Boot 集成 log4j2 -->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
-        <!-- SpringCloud Nacos 统一配置中心 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-
-        <!-- SpringCloud Gateway 服务网关 -->
+        <!-- 解决Springboot 2.6.x Cloud 不支持BootStrap配置文件的问题 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <version>3.0.3</version>
         </dependency>
+
     </dependencies>
 
 </project>

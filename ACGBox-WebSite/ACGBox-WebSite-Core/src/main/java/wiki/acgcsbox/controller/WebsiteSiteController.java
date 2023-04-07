@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 @Slf4j
 @RestController
-@RequestMapping("acgboxWebsiteSite")
+@RequestMapping("/website")
 public class WebsiteSiteController {
 
     @Autowired
