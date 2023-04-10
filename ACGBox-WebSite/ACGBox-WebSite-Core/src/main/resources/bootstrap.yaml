@@ -20,3 +20,11 @@ spring:
         group: DEV_GROUP
         # 配置命名空间（填写命名空间ID）：
         namespace: 8b6aab1c-5b52-4749-8c6e-db90f345bf7e
+
+    # sentinel 服务熔断配置：
+    sentinel:
+      transport:
+        # 配置 Sentinel Dashboard 地址，（注意网络环境，如果Sentinel在服务器上访问本地运行的微服务，无法监听到本地服务的流量数据）
+        dashboard: localhost:8080
+        # 默认8719端口，假如端口被占用，则会自动从8719端口开始一次扫描，直到找到未被使用的端口：
+        port: 8719

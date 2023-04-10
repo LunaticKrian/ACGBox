@@ -2,8 +2,13 @@ package wiki.acgcsbox.model.po;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * <p>
@@ -13,8 +18,12 @@ import com.baomidou.mybatisplus.annotation.TableName;
  * @author Krian
  */
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
 @TableName("acgbox_website_site")
-public class AcgboxWebsiteSite implements Serializable {
+public class WebsiteSite implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

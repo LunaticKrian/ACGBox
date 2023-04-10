@@ -1,6 +1,7 @@
 package wiki.acgcsbox.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import wiki.acgcsbox.constent.Result;
 import wiki.acgcsbox.model.dto.WebsiteMenuDto;
 import wiki.acgcsbox.model.po.WebsiteMenu;
@@ -28,9 +29,9 @@ public class WebsiteMenuServiceImpl extends ServiceImpl<WebsiteMenuMapper, Websi
         // 先判断是否已经创建了相同名字的分类菜单：
 
         // 向数据库拆入数据：
-        int flag = websiteMenuMapper.insert(websiteMenuDto);
-        if (flag <= 0) {
-            return new Result<WebsiteMenuDto>().setCode("500").setErrorMsg("数据写入数据库失败！");
+        int i = websiteMenuMapper.insert(websiteMenuDto);
+        if (0 >= i) {
+            return new Result<WebsiteMenuDto>().setCode(HttpStatus.INTERNAL_SERVER_ERROR.value()).setErrorMsg("数据写入数据库失败！");
         }
         return new Result<>();
     }

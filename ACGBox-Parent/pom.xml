@@ -49,7 +49,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- SpringBoot 依赖 -->
+            <!-- Spring Boot 依赖 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -58,7 +58,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!--Spring boot单元测试-->
+            <!--Spring Boot 单元测试-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
@@ -103,24 +103,46 @@
                 <scope>import</scope>
             </dependency>
 
-            <!--服务发现中心-->
+            <!-- Spring Cloud Nacos 服务发现中心-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>
             </dependency>
 
+            <!-- Spring Cloud Nacos 统一配置中心-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>
             </dependency>
 
-            <!-- SpringCloud Gateway 服务网关 -->
+            <!-- Spring Cloud Gateway 服务网关 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-gateway</artifactId>
                 <version>${spring-cloud-gateway.version}</version>
+            </dependency>
+
+            <!-- Spring Cloud Sentinel 服务熔断 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+            </dependency>
+
+            <!-- Spring Cloud Sentinel 数据持久化 -->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-datasource-nacos</artifactId>
+                <version>1.8.6</version>
+            </dependency>
+
+            <!-- Spring Cloud OpenFeign 服务远程调用 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>3.1.5</version>
             </dependency>
 
             <!-- lombok，简化类的构建-->

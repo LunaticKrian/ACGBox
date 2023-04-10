@@ -1,7 +1,7 @@
 package wiki.acgcsbox.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import wiki.acgcsbox.model.po.AcgboxWebsiteSite;
+import wiki.acgcsbox.model.po.WebsiteSite;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -12,6 +12,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Krian
  */
 @Mapper
-public interface AcgboxWebsiteSiteMapper extends BaseMapper<AcgboxWebsiteSite> {
+public interface WebsiteSiteMapper extends BaseMapper<WebsiteSite> {
 
 }

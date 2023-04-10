@@ -8,5 +8,6 @@ import wiki.acgcsbox.model.po.WebsiteMenu;
  * @description: TODO
  * @date 2023/4/3 0003 16:59
  */
+
 public class WebsiteMenuDto extends WebsiteMenu {
 }

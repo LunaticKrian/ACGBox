@@ -32,4 +32,9 @@ public class WebsiteMenuController {
         log.info("------ 创建新建站点菜单，请求用户id：{} ------ {}", userId, TimeUtils.getLocalTime());
         return websiteMenuService.add(websiteMenuDto);
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "test";
+    }
 }

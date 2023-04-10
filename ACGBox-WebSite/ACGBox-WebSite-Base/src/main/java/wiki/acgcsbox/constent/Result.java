@@ -26,7 +26,7 @@ public class Result<T> implements Serializable {
     private boolean success;
 
     @ApiModelProperty("响应状态码")
-    private String code;
+    private Integer code;
 
     @ApiModelProperty("响应信息")
     private String msg;

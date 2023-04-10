@@ -5,8 +5,12 @@ import java.io.Serializable;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * <p>
@@ -17,6 +21,10 @@ import com.baomidou.mybatisplus.annotation.TableName;
  */
 @ApiModel("站点分类菜单实体")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
 @TableName("acgbox_website_menu")
 public class WebsiteMenu implements Serializable {
 
