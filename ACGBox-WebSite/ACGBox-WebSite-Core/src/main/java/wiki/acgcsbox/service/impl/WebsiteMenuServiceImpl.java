@@ -2,7 +2,7 @@ package wiki.acgcsbox.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import wiki.acgcsbox.constent.Result;
+import wiki.acgcsbox.constant.Result;
 import wiki.acgcsbox.model.dto.WebsiteMenuDto;
 import wiki.acgcsbox.model.po.WebsiteMenu;
 import wiki.acgcsbox.mapper.WebsiteMenuMapper;

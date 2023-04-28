@@ -8,7 +8,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import wiki.acgcsbox.constent.enums.CommonError;
+import wiki.acgcsbox.constant.enums.CommonError;
 import wiki.acgcsbox.exception.ACGCSBoxException;
 import wiki.acgcsbox.exception.RestErrorResponse;
 

@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import wiki.acgcsbox.constent.Result;
+import wiki.acgcsbox.constant.Result;
 import wiki.acgcsbox.model.dto.WebsiteMenuDto;
 import wiki.acgcsbox.service.WebsiteMenuService;
 import wiki.acgcsbox.util.TimeUtils;

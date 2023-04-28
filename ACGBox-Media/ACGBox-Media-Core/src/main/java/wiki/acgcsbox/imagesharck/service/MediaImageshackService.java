@@ -17,5 +17,21 @@ import wiki.acgcsbox.imagesharck.model.po.MediaImageshack;
 @Service
 public interface MediaImageshackService extends IService<MediaImageshack> {
 
+    /**
+     * 上传图床图片文件
+     *
+     * @param localFilePath      本地文件路径
+     * @param mediaImageshackDto 图床图片传输对象
+     * @return MediaImageshackDto 图床图片信息
+     */
     MediaImageshackDto upload(String localFilePath, MediaImageshackDto mediaImageshackDto);
+
+    /**
+     * 根据文件Id获取文件信息
+     *
+     * @param fileId 文件ID
+     * @return 文件封装对象
+     */
+    MediaImageshackDto getImageInfoById(String fileId);
+
 }

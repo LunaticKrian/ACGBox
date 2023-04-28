@@ -1,6 +1,6 @@
 package wiki.acgcsbox.service;
 
-import wiki.acgcsbox.constent.Result;
+import wiki.acgcsbox.constant.Result;
 import wiki.acgcsbox.model.dto.WebsiteMenuDto;
 import wiki.acgcsbox.model.po.WebsiteMenu;
 import com.baomidou.mybatisplus.extension.service.IService;

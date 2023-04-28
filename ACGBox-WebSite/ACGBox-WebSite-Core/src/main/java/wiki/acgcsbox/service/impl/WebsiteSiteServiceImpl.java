@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import wiki.acgcsbox.constent.Result;
+import wiki.acgcsbox.constant.Result;
 import wiki.acgcsbox.mapper.WebsiteSiteMapper;
 import wiki.acgcsbox.model.dto.WebsiteSiteDto;
 import wiki.acgcsbox.model.po.WebsiteSite;

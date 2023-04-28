@@ -1,5 +1,6 @@
 package wiki.acgcsbox.imagesharck.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import io.minio.MinioClient;
@@ -7,6 +8,8 @@ import io.minio.UploadObjectArgs;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 import wiki.acgcsbox.exception.ACGCSBoxException;
@@ -21,6 +24,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import static wiki.acgcsbox.constant.RedisConstant.IMAGESHACK_PREFIX;
 
 /**
  * <p>
@@ -41,6 +46,9 @@ public class MediaImageshackServiceImpl extends ServiceImpl<MediaImageshackMappe
 
     @Autowired
     private MinioClient minioClient;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @Autowired
     private MediaImageshackMapper mediaImageshackMapper;
@@ -76,6 +84,32 @@ public class MediaImageshackServiceImpl extends ServiceImpl<MediaImageshackMappe
         }
 
         MediaImageshack mediaImageshack = insertMediaFilesToDb(fileMD5, BUCKET_IMAGESHACK, objectName, mediaImageshackDto);
+        BeanUtils.copyProperties(mediaImageshack, mediaImageshackDto);
+        return mediaImageshackDto;
+    }
+
+    @Override
+    public MediaImageshackDto getImageInfoById(String fileId) {
+        // 获取Redis的操作合集对象：
+        ValueOperations valueOperations = redisTemplate.opsForValue();
+        // 查询缓存：
+        String obj = (String) valueOperations.get(IMAGESHACK_PREFIX + fileId);
+        if (obj != null) {
+            // 解析JSON，返回对象即可：
+            log.info("---执行缓存查询：{}---", obj);
+            // 使用fastjson解析JSON字符串：
+            MediaImageshack mediaImageshack = JSON.parseObject(obj, MediaImageshack.class);
+            MediaImageshackDto mediaImageshackDto = new MediaImageshackDto();
+            BeanUtils.copyProperties(mediaImageshack, mediaImageshackDto);
+            return mediaImageshackDto;
+        }
+        // 查询缓存失败，从数据库中获取：
+        MediaImageshack mediaImageshack = mediaImageshackMapper.selectOne(new LambdaQueryWrapper<MediaImageshack>().eq(MediaImageshack::getFileId, fileId));
+        // 使用FastJSON解析对象：
+        String jsonString = JSON.toJSONString(mediaImageshack);
+        // 将查询结果写入缓存：
+        valueOperations.set(IMAGESHACK_PREFIX + fileId, jsonString);
+        MediaImageshackDto mediaImageshackDto = new MediaImageshackDto();
         BeanUtils.copyProperties(mediaImageshack, mediaImageshackDto);
         return mediaImageshackDto;
     }

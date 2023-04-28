@@ -40,6 +40,19 @@ spring:
       connection-timeout: 30000
       connection-test-query: SELECT 1
 
+  # Redis 配置:
+  redis:
+    host: 43.142.44.242
+    port: 6379
+    password: redisadmin
+    # 配置Redis连接池（有两种实现：jedis，lettuce（Spring默认））
+    lettuce:
+      pool:
+        enabled: true
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 100ms
 
 # Minio 配置：
 minio:

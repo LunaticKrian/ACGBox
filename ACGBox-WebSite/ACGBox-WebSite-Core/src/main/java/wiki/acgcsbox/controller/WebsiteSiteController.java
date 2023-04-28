@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import wiki.acgcsbox.constent.Result;
+import wiki.acgcsbox.constant.Result;
 import wiki.acgcsbox.model.po.WebsiteSite;
 import wiki.acgcsbox.model.qo.PageParams;
 import wiki.acgcsbox.model.dto.WebsiteSiteDto;
