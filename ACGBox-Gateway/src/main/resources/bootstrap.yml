@@ -1,11 +1,19 @@
+server:
+  port: 11000
+
 spring:
   application:
     name: gateway
 
+  profiles:
+    active: dev
+
   cloud:
     nacos:
-      server-addr: 43.142.44.242:8848
+      server-addr: 192.168.82.36:8848
       discovery:
+        group: DEV_GROUP
+        namespace: 5dc0602f-6e92-4bfd-84b5-ddcee62bc39f
         server-addr: ${spring.cloud.nacos.server-addr}
         service: ${spring.application.name}
       config:
@@ -15,10 +23,17 @@ spring:
         # 配置文件的分组规则：
         group: DEV_GROUP
         # 配置命名空间（填写命名空间ID）：
-        namespace: 8b6aab1c-5b52-4749-8c6e-db90f345bf7e
+        namespace: 5dc0602f-6e92-4bfd-84b5-ddcee62bc39f
 
-  profiles:
-    active: dev
-
-
-
+    # 服务网关配置：
+    gateway:
+      # 网关路由配置：
+      routes:
+        # 路由ID，自定义，唯一：
+        - id: mall-order
+          # lb：负载均衡，后面是服务名称
+          uri: lb://order
+          # 路由断言，就是判断请求是否符合路由规则的条件
+          predicates:
+            # 满足website开头的URI即可：
+            - Path=/order/**

@@ -1,0 +1,30 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: mall-order
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    # MySQL配置
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.142.44.242:3306/acg_box_mall_oms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: Kuang8223004369
+
+  cloud:
+    config:
+      # 配置本地配置最优先
+      override-none: true
+    nacos:
+      # Nacos服务地址：
+        server-addr: 192.168.82.36:8848
+
+# 配置MybatisPlus：
+mybatis-plus:
+  # mapper xml映射文件路径：
+  mapper-location: classpath:/mapper/**/*.xml
+  # 配置主键自增：
+  global-config:
+    db-config:
+      id-type: auto

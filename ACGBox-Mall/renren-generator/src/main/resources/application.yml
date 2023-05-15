@@ -1,0 +1,31 @@
+server:
+  port: 80
+
+# mysql
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #MySQL配置
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.142.44.242:3306/acg_box_mall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: Kuang8223004369
+
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  resources:
+    static-locations: classpath:/static/,classpath:/views/
+
+mybatis-plus:
+  mapperLocations: classpath:mapper/**/*.xml
+
+pagehelper:
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+#指定数据库，可选值有【mysql、oracle、sqlserver、postgresql、mongodb】
+renren:
+  database: mysql
+
