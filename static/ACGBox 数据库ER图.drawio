@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2023-04-12T09:11:35.727Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.62" etag="NkOkyMTRfHNA_gsXXntC" version="21.1.4" type="device">
+  <diagram name="第 1 页" id="l6KEJ_qAT82oEwNRZAoX">
+    <mxGraphModel dx="865" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qbuHucwKcZEJVNJGowhH-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qbuHucwKcZEJVNJGowhH-8" target="qbuHucwKcZEJVNJGowhH-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="275.28571428571433" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-14" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qbuHucwKcZEJVNJGowhH-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.1574" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-8" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;网站导航网站记录表&lt;br style=&quot;font-size: 11px;&quot;&gt;acgbox_website_site：&lt;br style=&quot;font-size: 11px;&quot;&gt;site_id&lt;br style=&quot;font-size: 11px;&quot;&gt;menu_id&lt;br&gt;user_id&lt;br style=&quot;font-size: 11px;&quot;&gt;site_name&lt;br style=&quot;font-size: 11px;&quot;&gt;site_logo_path&lt;br style=&quot;font-size: 11px;&quot;&gt;site_description&lt;br style=&quot;font-size: 11px;&quot;&gt;site_url&lt;br style=&quot;font-size: 11px;&quot;&gt;click_count&lt;br style=&quot;font-size: 11px;&quot;&gt;order_num&lt;br style=&quot;font-size: 11px;&quot;&gt;create_time&lt;br style=&quot;font-size: 11px;&quot;&gt;update_time&lt;br style=&quot;font-size: 11px;&quot;&gt;create_user&lt;br style=&quot;font-size: 11px;&quot;&gt;update_user&lt;br&gt;status&lt;br style=&quot;font-size: 11px;&quot;&gt;delete_status&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="100" y="147.5" width="140" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-10" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;网站导航网站菜单表&lt;br style=&quot;font-size: 11px;&quot;&gt;acgbox_website_menu：&lt;br style=&quot;font-size: 11px;&quot;&gt;menu_id&lt;br&gt;user_id&lt;br&gt;menu_name&lt;br&gt;menu_icon&lt;br style=&quot;font-size: 11px;&quot;&gt;parent_id&lt;br style=&quot;font-size: 11px;&quot;&gt;order_num&lt;br style=&quot;font-size: 11px;&quot;&gt;create_time&lt;br style=&quot;font-size: 11px;&quot;&gt;update_time&lt;br style=&quot;font-size: 11px;&quot;&gt;create_user&lt;br style=&quot;font-size: 11px;&quot;&gt;update_user&lt;br style=&quot;font-size: 11px;&quot;&gt;status&lt;br&gt;delete_status&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="530" y="167.5" width="140" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="qbuHucwKcZEJVNJGowhH-12" target="qbuHucwKcZEJVNJGowhH-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-15" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qbuHucwKcZEJVNJGowhH-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.1084" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-12" value="分类" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="246.25" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qbuHucwKcZEJVNJGowhH-10" target="qbuHucwKcZEJVNJGowhH-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="120" />
+              <mxPoint x="770" y="120" />
+              <mxPoint x="770" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbuHucwKcZEJVNJGowhH-17" value="多级分类菜单" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qbuHucwKcZEJVNJGowhH-16" vertex="1" connectable="0">
+          <mxGeometry x="-0.3037" relative="1" as="geometry">
+            <mxPoint x="-34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BMManOyBWXh-oUkgJds9-1" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;图床记录表&lt;br style=&quot;font-size: 11px;&quot;&gt;acgbox_media_imageshack：&lt;br style=&quot;font-size: 11px;&quot;&gt;id&lt;br&gt;file_id&lt;br style=&quot;font-size: 11px;&quot;&gt;menu_id&lt;br&gt;file_name&lt;br&gt;file_type&lt;br&gt;file_path&lt;br style=&quot;font-size: 11px;&quot;&gt;tags&lt;br style=&quot;font-size: 11px;&quot;&gt;url&lt;br&gt;bucket&lt;br style=&quot;font-size: 11px;&quot;&gt;click_count&lt;br style=&quot;font-size: 11px;&quot;&gt;upload_time&lt;br&gt;remark&lt;br&gt;status&lt;br style=&quot;font-size: 11px;&quot;&gt;delete_status&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="110" y="550" width="170" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="3FH7gRXXTZw44eUswLIu-1" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;食物记录表&lt;br style=&quot;font-size: 11px;&quot;&gt;acgbox_other_eat：&lt;br style=&quot;font-size: 11px;&quot;&gt;id&lt;br&gt;food_id&lt;br&gt;food_name&lt;br style=&quot;font-size: 11px;&quot;&gt;menu_id&lt;br&gt;meal_id（套餐）&lt;br&gt;gather_type（餐类型）&lt;br&gt;food_type（食物类型）&lt;br style=&quot;font-size: 11px;&quot;&gt;tags&lt;br&gt;image&lt;br&gt;satisfied&lt;br&gt;remark&lt;br&gt;status&lt;br style=&quot;font-size: 11px;&quot;&gt;delete_status&lt;br&gt;create_time&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;update_time&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="110" y="890" width="160" height="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

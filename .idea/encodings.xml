@@ -3,21 +3,39 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/../../../maven/maven_repository/org/springframework/boot/spring-boot-starter-parent/2.0.6.RELEASE/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../../../maven/maven_repository/org/springframework/boot/spring-boot-starter-parent/2.6.11/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../maven/maven_repository/org/springframework/boot/spring-boot-starter-parent/2.6.6/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-ACG/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-ACG/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Daliy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Daliy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-coupon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-coupon/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-member/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-ware/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/mall-ware/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/renren-fast/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/renren-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/renren-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ACGBox-Mall/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/ACGBox-Media-Core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Media/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ACGBox-Other/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ACGBox-Other/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Parent/ACGBox-Media/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ACGBox-Parent/src/main/resources" charset="UTF-8" />
